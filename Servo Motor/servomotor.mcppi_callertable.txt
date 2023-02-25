@@ -1,0 +1,4 @@
+main
+	servorotate0
+	servorotate90
+	servorotate180

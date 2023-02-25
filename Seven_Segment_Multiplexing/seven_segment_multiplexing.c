@@ -7,7 +7,7 @@ void main()
 
      while(1)
      {   
-         for(i=0;i<140;i++){
+         for(i=0;i<1;i++){
          portb=segment[j/1000];
          portd.f0=0;
          delay_ms(1);

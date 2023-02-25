@@ -12,7 +12,7 @@ _main:
 	CLRF       PORTD+0
 ;seven_segment_multiplexing.c,8 :: 		while(1)
 L_main0:
-;seven_segment_multiplexing.c,10 :: 		for(i=0;i<140;i++){
+;seven_segment_multiplexing.c,10 :: 		for(i=0;i<1;i++){
 	CLRF       _i+0
 	CLRF       _i+1
 L_main2:
@@ -23,7 +23,7 @@ L_main2:
 	SUBWF      R0+0, 0
 	BTFSS      STATUS+0, 2
 	GOTO       L__main14
-	MOVLW      140
+	MOVLW      1
 	SUBWF      _i+0, 0
 L__main14:
 	BTFSC      STATUS+0, 0
@@ -210,7 +210,7 @@ L_main8:
 	NOP
 ;seven_segment_multiplexing.c,29 :: 		portd.f3=1;
 	BSF        PORTD+0, 3
-;seven_segment_multiplexing.c,10 :: 		for(i=0;i<140;i++){
+;seven_segment_multiplexing.c,10 :: 		for(i=0;i<1;i++){
 	INCF       _i+0, 1
 	BTFSC      STATUS+0, 2
 	INCF       _i+1, 1
